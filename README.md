@@ -1,2 +1,30 @@
 # MinecraftAI
-steve aprendera a pasarse minecraft desde 0
+steve will learn pass minecraft
+### Proyect:
+For this project we thought about using deep reinforcement learning algorithms implemented in tensorflow so that our character is capable of 
+learn to move up create and kill enemies for your survival.
+For this, we plan to create a single AI with several checkpoints or create 1 AI per objective and put them all together at the end, prioritizing depending on the context.
+### Goals for steve:
+* learn to walk
+* get wood
+* craft
+* build
+* kill enemies
+* search for minerals
+* go to the nether
+* go to end
+* kill the dragon
+### Technology:
+Built using 
+* pygame 
+* tensorflow
+### Version and Release:
+First Release, version 1.0
+### Instructions
+* download libraries mentioned above
+* run main.py
+* have a server in spigotmc
+* download raspberryjuice
+### Developed by: 
+* ignack
+* Email: ignack354@gmail.com
