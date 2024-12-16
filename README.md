@@ -26,5 +26,5 @@ First Release, version 1.0
 * have a server in spigotmc
 * download raspberryjuice
 ### Developed by: 
-* ignack
+* ignack 354
 * Email: ignack354@gmail.com
