@@ -1,7 +1,9 @@
 from playwright.sync_api import sync_playwright
 import json
 import re
-
+"""
+Get the IDs and names of objects in Minecraft from the "https://minecraft-ids.grahamedgecombe.com/" page
+"""
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(headless=True)
     page = browser.new_page()
