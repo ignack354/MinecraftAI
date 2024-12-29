@@ -4,9 +4,11 @@ from mcpi.minecraft import Minecraft
 import numpy as np
 from tensorflow.keras.models import load_model  # type: ignore
 from time import sleep
-
+"""
+Load the trained model to purchase its functionality
+"""
 # Load the pre-trained model
-model = load_model("minecraft_agent_2.h5")
+model = load_model("minecraft_agent_3.h5")
 
 def get_position():
     """Get the player's position in the Minecraft world."""
@@ -18,17 +20,18 @@ def get_position():
 
 # Initialize Minecraft
 mc = Minecraft.create()
-mc.postToChat("Program Started")
-
 # Wait for the player to be ready
 sleep(30)
+mc.postToChat("Program Started")
+
+
 
 # Loop for executing the model's predictions
-for i in range(15):
+for i in range(14):
     x0, y0, z0 = get_position()
     
     # Get the blocks around the player
-    blocks = np.array([list(mc.getBlocks(x0 - 1, y0 - 1, z0 + 1, x0 + 1, y0 - 1, z0 - 1))])
+    blocks = np.array([list(mc.getBlocks(x0 - 1, y0 - 1, z0 + 1, x0 + 1, y0 +1, z0 - 1))])
     
     # Predict the action using the model
     action = model(blocks)
