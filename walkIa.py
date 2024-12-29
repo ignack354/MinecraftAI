@@ -5,6 +5,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 from tensorflow.keras.models import load_model  # type: ignore
+"""
+Creates the neural network model and combines it with the Q-Learning algorithm 
+Model Entries:
+As an input, the model receives the blocks around the player in layers, that is, first the blocks below with a distance of one block, then in the middle and finally the upper blocks of the character.
+Mode output:
+Returns a prediction of where the character should move
+0: forward
+1:left
+2:backward
+3:right
+"""
 origin=7,24,-4
 def get_position():
     player_pos = mc.player.getTilePos()  # Get the player's position
