@@ -23,9 +23,9 @@ Built using
 First Release, version 1.0
 ### Instructions
 * Download libraries mentioned above
-* Run main.py
-* Have a server in spigotmc
+* Have a server 1.12.1 in spigotmc
 * Download raspberryjuice modified
+* Add Raspberry as a plugin
 * Change minecraft.py file from the MCPI library to this GitHub
 ### Developed by: 
 * ignack 354
