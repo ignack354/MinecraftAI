@@ -18,13 +18,15 @@ For this, we plan to create a single AI with several checkpoints or create 1 AI 
 Built using 
 * pygame 
 * tensorflow
+* mcpi
 ### Version and Release:
 First Release, version 1.0
 ### Instructions
-* download libraries mentioned above
-* run main.py
-* have a server in spigotmc
-* download raspberryjuice
+* Download libraries mentioned above
+* Run main.py
+* Have a server in spigotmc
+* Download raspberryjuice modified
+* Change minecraft.py file from the MCPI library to this GitHub
 ### Developed by: 
 * ignack 354
 * Email: ignack354@gmail.com
